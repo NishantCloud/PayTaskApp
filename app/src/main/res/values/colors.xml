@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Action: Green Mint -->
+    <color name="colorPrimary">#00D084</color>        <!-- Mint Green -->
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorNew">#000000</color><!-- White text on button -->
+
+    <!-- Secondary / Button Hover (optional darker green) -->
+    <color name="colorSecondary">#00B075</color>      <!-- Slightly darker mint -->
+    <color name="colorOnSecondary">#FFFFFF</color>
+
+    <!-- Backgrounds -->
+    <color name="colorBackground">#F9F9F9</color>     <!-- Near-white background -->
+    <color name="colorSurface">#FFFFFF</color>        <!-- Card/Surface color -->
+    <color name="colorOnSurface">#000000</color>      <!-- Dark text on light surface -->
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#000000</color>         <!-- Dark rich black text -->
+    <color name="textSecondary">#888888</color>
+    <color name="textLightGray">#666666</color><!-- Mid-gray -->
+    <color name="textHint">#9E9E9E</color>         <!-- Mid-gray -->
+    <color name="textNew">#FAFAFA</color>            <!-- Light gray for placeholders -->
+
+    <!-- Accent / Highlight -->
+    <color name="colorAccent">#00D084</color>         <!-- Match primary for brand emphasis -->
+    <color name="colorOnAccent">#FFFFFF</color>
+
+    <!-- Borders / Dividers -->
+    <color name="colorDivider">#E0E0E0</color>        <!-- Soft light gray -->
+    <color name="colorBorder">#CCCCCC</color>         <!-- Slightly darker divider -->
+
+    <!-- System UI -->
+    <color name="statusBarColor">#FAFAFA</color>
+    <color name="navigationBarColor">#FAFAFA</color>
+
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="softBackground">#F4F5F7</color>
+    <color name="headerBackground">#E9F7F3</color> <!-- subtle mint tint -->
+
+        <color name="colorPrimary1">#00D084</color>
+        <color name="colorOnPrimary1">#FFFFFF</color>
+        <color name="colorBackground1">#121212</color>
+        <color name="colorSurface1">#1E1E1E</color>
+        <color name="textPrimary1">#FFFFFF</color>
+        <color name="textSecondary1">#BBBBBB</color>
+        <color name="textHint1">#888888</color>
+        <color name="colorDivider1">#2A2A2A</color>
+        <color name="colorAccent1">#00D084</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="grayLight">#F5F5F5</color>
+    <color name="errorRed">#B00020</color>
+
+    <color name="success">#4CAF50</color>
+    <color name="failed">#DF8400</color>
+        <color name="pending">#F44336</color>
+
+
+
+
+
+</resources>

@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PayTask" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="fontFamily">@font/poppins</item>
+
+        <!-- Primary buttons -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        <!-- Secondary actions -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        <!-- Background and surfaces -->
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+
+        <!-- Text -->
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+        <item name="android:textColorHint">@color/textHint</item>
+
+        <!-- Buttons / Cards -->
+
+        <!-- Accent and highlights -->
+        <item name="colorTertiary">@color/colorAccent</item>
+        <item name="colorOnTertiary">@color/colorOnAccent</item>
+
+        <!-- System UI colors -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorNew</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">@color/colorNew</item>
+
+    </style>
+
+    <style name="Theme.PayTask" parent="Base.Theme.PayTask" />
+</resources>

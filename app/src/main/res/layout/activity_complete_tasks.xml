@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:padding="6dp"
+        android:src="@drawable/ic_arrow_back"
+        android:contentDescription="Back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Instructions"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/backButton"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="18dp" />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/instructionsScroll"
+
+        android:layout_margin="16dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/pageTitle"
+        app:layout_constraintBottom_toTopOf="@id/startTaskBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Task Summary Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                android:backgroundTint="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/taskTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/poppins_bold" />
+
+                    <TextView
+                        android:id="@+id/taskReward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reward: ₹"
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Instructions -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instructions:"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/taskInstructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Click the button below to open the task link.\n2. Complete Simple Link Shortener Task.\n (You can Watch Tutorial Also).\n3. After Link Shortener Completed You will Automatically Redirected You to the App.\n4. Task Complete You will Receive Money In your Wallet Fast."
+                android:textColor="#444444"
+                android:textSize="14sp"
+                android:lineSpacingExtra="6dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Start Task Button -->
+    <!-- Watch Tutorial Button -->
+    <Button
+        android:id="@+id/watchTutorialBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Watch Tutorial "
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/outlined_button"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:padding="14dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/startTaskBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Start Task Button -->
+    <Button
+        android:id="@+id/startTaskBtn"
+        android:layout_width="0dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="wrap_content"
+        android:text="Start Task"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:padding="14dp"
+        android:background="@drawable/primary_button"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

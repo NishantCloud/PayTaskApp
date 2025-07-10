@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "227848740670",
+    "project_id": "paytask-c7abf",
+    "storage_bucket": "paytask-c7abf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227848740670:android:73ec55a92e0e7bded1566f",
+        "android_client_info": {
+          "package_name": "com.qolorco.paytask"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2pqCeqhDc8fHeIjAB1YtOM9VijOt61gA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

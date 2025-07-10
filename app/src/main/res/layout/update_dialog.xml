@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialogLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_corner_new"
+    android:backgroundTint="@color/colorNew"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_update"
+        app:tint="@color/white" />
+    <TextView
+        android:id="@+id/updateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="New Update Available"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/updateMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A new version of the app is available with exciting new features and improvements."
+        android:textColor="#CCCCCC"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnUpdateNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Now"
+        android:background="@drawable/primary_button"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:textAllCaps="false"  />
+
+
+</LinearLayout>
