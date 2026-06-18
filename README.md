@@ -30,27 +30,20 @@ An Android application that enables users to complete tasks, earn rewards, and r
 * How Real Project Works.
   
 
-This project demonstrates my ability to build a complete Android application with user management, task tracking, and payment-related workflows.       
- 
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/7eabdf33-d72b-43fb-9ce8-cdb1d3721b4b" width="180"/>
-  <img src="https://github.com/user-attachments/assets/25239270-16f5-4183-a4cc-80e437ced6e4" width="180"/>
-  <img src="https://github.com/user-attachments/assets/2c79d45c-8bef-48f9-b4dd-e3783a72912d" width="180"/>
-</p>
+This project demonstrates my ability to build a complete Android application with user management, task tracking, and payment-related workflows.    
 
 -> HERE ARE SOME SCREENSHOTS FROM APP
 
 <p align="center">
-<img width="180"   src="https://github.com/user-attachments/assets/7eabdf33-d72b-43fb-9ce8-cdb1d3721b4b" />
-<img width="180"     src="https://github.com/user-attachments/assets/ece093da-846a-41a4-aedc-a9bb612bfb1a" />
-<img width="180"   src="https://github.com/user-attachments/assets/6ced834c-b5ad-4fd3-9269-8ce8d1182bdc" />
-<img width="180"   src="https://github.com/user-attachments/assets/25239270-16f5-4183-a4cc-80e437ced6e4" />
+<img width="240"   src="https://github.com/user-attachments/assets/7eabdf33-d72b-43fb-9ce8-cdb1d3721b4b" />
+<img width="240"     src="https://github.com/user-attachments/assets/ece093da-846a-41a4-aedc-a9bb612bfb1a" />
+<img width="240"   src="https://github.com/user-attachments/assets/6ced834c-b5ad-4fd3-9269-8ce8d1182bdc" />
+<img width="240"   src="https://github.com/user-attachments/assets/25239270-16f5-4183-a4cc-80e437ced6e4" />
 </p>
   <p align="center">
-<img width="180"   src="https://github.com/user-attachments/assets/7a48d095-443a-465d-bc56-b3b7b0fb5264" />
-<img width="180"   src="https://github.com/user-attachments/assets/2c79d45c-8bef-48f9-b4dd-e3783a72912d" />
-<img width="180"   src="https://github.com/user-attachments/assets/6a718f89-5521-44c4-b70b-80488b3b5cad" />
+<img width="240"   src="https://github.com/user-attachments/assets/7a48d095-443a-465d-bc56-b3b7b0fb5264" />
+<img width="240"   src="https://github.com/user-attachments/assets/2c79d45c-8bef-48f9-b4dd-e3783a72912d" />
+<img width="240"   src="https://github.com/user-attachments/assets/6a718f89-5521-44c4-b70b-80488b3b5cad" />
   </p>
 
 
