@@ -1,6 +1,5 @@
-package com.qolorco.paytask;
+package com.qolorco.paytask.adapters;
 
-import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.icu.text.SimpleDateFormat;
 import android.view.LayoutInflater;
@@ -10,6 +9,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.qolorco.paytask.R;
+import com.qolorco.paytask.models.WithdrawalModel;
 
 import java.util.Date;
 import java.util.List;

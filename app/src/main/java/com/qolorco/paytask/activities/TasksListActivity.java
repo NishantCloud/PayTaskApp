@@ -1,4 +1,4 @@
-package com.qolorco.paytask;
+package com.qolorco.paytask.activities;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -8,11 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -20,13 +16,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.qolorco.paytask.R;
+import com.qolorco.paytask.adapters.TaskAdapter;
+import com.qolorco.paytask.models.TaskModel;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

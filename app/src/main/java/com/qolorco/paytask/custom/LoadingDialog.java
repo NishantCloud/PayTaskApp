@@ -1,4 +1,4 @@
-package com.qolorco.paytask;
+package com.qolorco.paytask.custom;
 
 
 import android.app.Activity;
@@ -8,6 +8,8 @@ import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
+
+import com.qolorco.paytask.R;
 
 public class LoadingDialog {
 

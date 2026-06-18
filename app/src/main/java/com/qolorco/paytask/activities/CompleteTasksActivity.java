@@ -1,4 +1,4 @@
-package com.qolorco.paytask;
+package com.qolorco.paytask.activities;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -13,18 +13,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.firebase.Timestamp;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.qolorco.paytask.custom.CustomToast;
+import com.qolorco.paytask.R;
 
 import java.text.DecimalFormat;
 import java.util.HashMap;
@@ -63,7 +60,8 @@ public class CompleteTasksActivity extends AppCompatActivity {
 
         DecimalFormat format  = new DecimalFormat("0.00");
         if (price!=null) taskReward.setText("Reward: ₹"+format.format(Float.valueOf(price)));
-        taskTitle.setText(name+" ( Link Shortener )");
+        taskTitle.setText(name);
+
 
         watchTutorialBtn.setOnClickListener(new View.OnClickListener() {
             @Override

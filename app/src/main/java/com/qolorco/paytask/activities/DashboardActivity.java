@@ -1,8 +1,8 @@
-package com.qolorco.paytask;
+package com.qolorco.paytask.activities;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -10,17 +10,13 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.icu.text.SimpleDateFormat;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,7 +24,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.google.firebase.BuildConfig;
 import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -36,6 +31,9 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.qolorco.paytask.custom.GetDetails;
+import com.qolorco.paytask.custom.LoadingDialog;
+import com.qolorco.paytask.R;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -61,7 +59,7 @@ public class DashboardActivity extends AppCompatActivity {
     FirebaseUser user ;
     LinearLayout bnbTasks,bnbProfile;
 
-    Button btWithdraw,btJoinTelegram;
+    Button btWithdraw,btJoinUs;
 
     private AlertDialog dialog;
     LoadingDialog dialog1;
@@ -91,6 +89,7 @@ public class DashboardActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -118,7 +117,7 @@ public class DashboardActivity extends AppCompatActivity {
 
 
 
-        btJoinTelegram = findViewById(R.id.btJoinTelegram);
+        btJoinUs = findViewById(R.id.btJoinUs);
         btWithdraw = findViewById(R.id.btWithdraw);
         tvTotalEarning = findViewById(R.id.tvTotalEarning);
         tvTodayTasks = findViewById(R.id.tvTodayTasks);
@@ -146,7 +145,7 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
-        btJoinTelegram.setOnClickListener(new View.OnClickListener() {
+        btJoinUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                     Intent intent = new Intent(Intent.ACTION_VIEW);

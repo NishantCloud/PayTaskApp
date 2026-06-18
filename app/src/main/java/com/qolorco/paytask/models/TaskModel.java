@@ -1,4 +1,4 @@
-package com.qolorco.paytask;
+package com.qolorco.paytask.models;
 
 public class TaskModel {
     public String taskId, name, link, status, tutorial;

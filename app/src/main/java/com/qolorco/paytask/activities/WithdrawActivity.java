@@ -1,4 +1,4 @@
-package com.qolorco.paytask;
+package com.qolorco.paytask.activities;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -26,6 +26,9 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
+import com.qolorco.paytask.R;
+import com.qolorco.paytask.adapters.WithdrawalAdapter;
+import com.qolorco.paytask.models.WithdrawalModel;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;

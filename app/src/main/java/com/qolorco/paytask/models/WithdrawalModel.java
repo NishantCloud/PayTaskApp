@@ -1,4 +1,4 @@
-package com.qolorco.paytask;
+package com.qolorco.paytask.models;
 
 import com.google.firebase.Timestamp;
 

@@ -102,7 +102,7 @@
                 android:id="@+id/taskInstructions"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1. Click the button below to open the task link.\n2. Complete Simple Link Shortener Task.\n (You can Watch Tutorial Also).\n3. After Link Shortener Completed You will Automatically Redirected You to the App.\n4. Task Complete You will Receive Money In your Wallet Fast."
+                android:text="1. Click the button below to open the task link.\n2. Complete Simple Task.\n (You can Watch Tutorial Also).\n3. After Task Completed You will Automatically Redirected to the App.\n4. Task Complete You will Receive Money In your Wallet Fast."
                 android:textColor="#444444"
                 android:textSize="14sp"
                 android:lineSpacingExtra="6dp" />

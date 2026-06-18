@@ -1,4 +1,4 @@
-package com.qolorco.paytask;
+package com.qolorco.paytask.activities;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -11,7 +11,6 @@ import android.icu.text.DecimalFormat;
 import android.icu.text.SimpleDateFormat;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,6 +29,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Transaction;
+import com.qolorco.paytask.R;
 
 import java.util.Collections;
 import java.util.Date;
@@ -60,7 +60,7 @@ public class TaskCompletionCheckerActivity extends AppCompatActivity {
         backImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(TaskCompletionCheckerActivity.this,TasksListActivity.class));
+                startActivity(new Intent(TaskCompletionCheckerActivity.this, TasksListActivity.class));
                 finish();
             }
         });
@@ -84,8 +84,6 @@ public class TaskCompletionCheckerActivity extends AppCompatActivity {
                 finish();
             }
         });
-
-
 
 
     }
@@ -124,64 +122,6 @@ public class TaskCompletionCheckerActivity extends AppCompatActivity {
         if ("unlock_reward1".equals(host)) {
             TaskCompleted("task1");
 
-        } else if ("unlock_reward2".equals(host)) {
-            TaskCompleted("task2");
-        } else if ("unlock_reward3".equals(host)) {
-            TaskCompleted("task3");
-        } else if ("unlock_reward4".equals(host)) {
-            TaskCompleted("task4");
-        } else if ("unlock_reward5".equals(host)) {
-            TaskCompleted("task5");
-        } else if ("unlock_reward6".equals(host)) {
-            TaskCompleted("task6");
-        } else if ("unlock_reward7".equals(host)) {
-            TaskCompleted("task7");
-        } else if ("unlock_reward8".equals(host)) {
-            TaskCompleted("task8");
-        } else if ("unlock_reward9".equals(host)) {
-            TaskCompleted("task9");
-        } else if ("unlock_reward10".equals(host)) {
-            TaskCompleted("task10");
-        } else if ("unlock_reward11".equals(host)) {
-            TaskCompleted("task11");
-        } else if ("unlock_reward12".equals(host)) {
-            TaskCompleted("task12");
-        } else if ("unlock_reward13".equals(host)) {
-            TaskCompleted("task13");
-        } else if ("unlock_reward14".equals(host)) {
-            TaskCompleted("task14");
-        } else if ("unlock_reward15".equals(host)) {
-            TaskCompleted("task15");
-        } else if ("unlock_reward16".equals(host)) {
-            TaskCompleted("task16");
-        } else if ("unlock_reward17".equals(host)) {
-            TaskCompleted("task17");
-        } else if ("unlock_reward18".equals(host)) {
-            TaskCompleted("task18");
-        } else if ("unlock_reward19".equals(host)) {
-            TaskCompleted("task19");
-        } else if ("unlock_reward20".equals(host)) {
-            TaskCompleted("task20");
-        } else if ("unlock_reward21".equals(host)) {
-            TaskCompleted("task21");
-        } else if ("unlock_reward22".equals(host)) {
-            TaskCompleted("task22");
-        } else if ("unlock_reward23".equals(host)) {
-            TaskCompleted("task23");
-        } else if ("unlock_reward24".equals(host)) {
-            TaskCompleted("task24");
-        } else if ("unlock_reward25".equals(host)) {
-            TaskCompleted("task25");
-        } else if ("unlock_reward26".equals(host)) {
-            TaskCompleted("task26");
-        } else if ("unlock_reward27".equals(host)) {
-            TaskCompleted("task27");
-        } else if ("unlock_reward28".equals(host)) {
-            TaskCompleted("task28");
-        } else if ("unlock_reward29".equals(host)) {
-            TaskCompleted("task29");
-        } else if ("unlock_reward30".equals(host)) {
-            TaskCompleted("task30");
         }
     }
 

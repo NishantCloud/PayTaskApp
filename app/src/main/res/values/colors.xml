@@ -10,7 +10,7 @@
     <color name="colorOnSecondary">#FFFFFF</color>
 
     <!-- Backgrounds -->
-    <color name="colorBackground">#F9F9F9</color>     <!-- Near-white background -->
+    <color name="colorBackground">#F4F4F5</color>     <!-- Near-white background -->
     <color name="colorSurface">#FFFFFF</color>        <!-- Card/Surface color -->
     <color name="colorOnSurface">#000000</color>      <!-- Dark text on light surface -->
 

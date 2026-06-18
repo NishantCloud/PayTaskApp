@@ -1,16 +1,13 @@
-package com.qolorco.paytask;
+package com.qolorco.paytask.activities;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.icu.text.SimpleDateFormat;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
 import android.text.InputType;
 import android.text.TextUtils;
-import android.util.TypedValue;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -19,13 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
-import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.firebase.FirebaseTooManyRequestsException;
 import com.google.firebase.auth.FirebaseAuth;
@@ -34,7 +25,9 @@ import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.ktx.Firebase;
+import com.qolorco.paytask.custom.CustomToast;
+import com.qolorco.paytask.custom.LoadingDialog;
+import com.qolorco.paytask.R;
 
 import java.util.Date;
 import java.util.HashMap;

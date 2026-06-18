@@ -1,18 +1,15 @@
-package com.qolorco.paytask;
+package com.qolorco.paytask.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.qolorco.paytask.R;
 
-public class MainActivity extends AppCompatActivity {
+public class LoadingActivity extends AppCompatActivity {
 
     FirebaseAuth auth;
     @Override
@@ -27,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    startActivity(new Intent(MainActivity.this, DashboardActivity.class));
+                    startActivity(new Intent(LoadingActivity.this, DashboardActivity.class));
                     finish();
                 }
             }, 2000);
@@ -36,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                    startActivity(new Intent(LoadingActivity.this, LoginActivity.class));
                     finish();
                 }
             }, 2000);

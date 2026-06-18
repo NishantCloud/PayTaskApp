@@ -1,4 +1,4 @@
-package com.qolorco.paytask;
+package com.qolorco.paytask.activities;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -11,15 +11,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.qolorco.paytask.custom.GetDetails;
+import com.qolorco.paytask.R;
 
 import java.text.DecimalFormat;
 
@@ -28,7 +26,7 @@ public class ProfileActivity extends AppCompatActivity {
     TextView userName, userEmail,walletTxt;
     Button addMoneyBtn;
 
-    LinearLayout joinTelegram,joinYouTube;
+    LinearLayout joinUs,joinYouTube;
 
     FirebaseUser user;
     FirebaseAuth auth;
@@ -46,7 +44,7 @@ public class ProfileActivity extends AppCompatActivity {
         userEmail = findViewById(R.id.userEmail);
         walletTxt = findViewById(R.id.walletTxt);
         addMoneyBtn = findViewById(R.id.addMoneyBtn);
-        joinTelegram = findViewById(R.id.joinTelegram);
+        joinUs = findViewById(R.id.joinUs);
         joinYouTube = findViewById(R.id.joinYouTube);
 
         auth = FirebaseAuth.getInstance();
@@ -68,7 +66,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         });
 
-        joinTelegram.setOnClickListener(new View.OnClickListener() {
+        joinUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
